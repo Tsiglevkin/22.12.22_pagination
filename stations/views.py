@@ -25,7 +25,7 @@ def bus_stations(request):
                 'Street': row.get('Street'),
                 'District': row.get('District')
             }
-            stations_list.append(station_dict)  # наполняем списко выше
+            stations_list.append(station_dict)  # наполняем список выше
 
     page_num = int(request.GET.get('page', 1))  # получаем параметр для взятия нужной страницы пагинатора
 
